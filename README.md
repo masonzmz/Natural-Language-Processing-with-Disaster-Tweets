@@ -10,3 +10,13 @@ conda install pytorch torchvision torchaudio cudatoolkit=11.6 -c pytorch -c cond
 pip install transformers
 pip install datasets
 ```
+
+# Tuning Parameters
+```
+bash /src/run.sh
+```
+
+# Training
+```
+python3 /src/train.py --model_name [$model_name] --threshold [$threshold] --batchsize [$batchsize] --dropout [$dropout] --layer [$layer] 
+```
