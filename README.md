@@ -1,7 +1,9 @@
-# Natural-Language-Processing-with-Disaster-Tweets
+# [Natural-Language-Processing-with-Disaster-Tweets](https://www.kaggle.com/competitions/nlp-getting-started/overview)
 Kaggle Competition: Predict which Tweets are about real disasters and which ones are not
 
 ## Final Rank and Result
+
+[Leadboard](https://www.kaggle.com/competitions/nlp-getting-started/leaderboard)
 
 |Model|Best Accuracy|Rank|
 |:---|:---|:---|
