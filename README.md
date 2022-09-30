@@ -1,6 +1,10 @@
 # Natural-Language-Processing-with-Disaster-Tweets
 Kaggle Competition: Predict which Tweets are about real disasters and which ones are not
 
+## Final Rank
+
+&32 / 824& Top 3%
+
 # Set-up
 ## Operation System:
 ![macOS Badge](https://img.shields.io/badge/-macOS-white?style=flat-square&logo=macOS&logoColor=000000) ![Linux Badge](https://img.shields.io/badge/-Linux-white?style=flat-square&logo=Linux&logoColor=FCC624) ![Ubuntu Badge](https://img.shields.io/badge/-Ubuntu-white?style=flat-square&logo=Ubuntu&logoColor=E95420)
