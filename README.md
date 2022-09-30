@@ -19,7 +19,7 @@ Kaggle Competition: Predict which Tweets are about real disasters and which ones
 
 ## GPU:
 
-![Nvidia](http://img.shields.io/badge/-RTXA6000-eee?style=flat&logo=NVIDIA&logoColor=76B900&label=NVIDIA)
+![Nvidia](http://img.shields.io/badge/-RTX_A6000-eee?style=flat&logo=NVIDIA&logoColor=76B900&label=NVIDIA)
 
 ## Environment
 ```console
