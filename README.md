@@ -35,13 +35,20 @@ username@localhost:~$ pip install seaborn
 username@localhost:~$ pip install nltk
 ```
 
-# Tuning Parameters
+# How to run
+
+The first choice is tuning parameters, you can directly run the run.sh file. It will take a long time, about 100hrs. 
+The best parameters for different model are provided below. 
+
+## Tuning Parameters
 
 ```console
 username@localhost:~$ bash /src/run.sh
 ```
     
-# Training
+## Training
+
+Meanwhile, you can just run the python file, it will be executed once, and the result will be printed. You can try different parameters before you execute the python file.
 
 ```console
 username@localhost:~$ python3 /src/train.py --model_name [$model_name] --threshold [$threshold] --batchsize [$batchsize] --dropout [$dropout] --layer[$layer] 
