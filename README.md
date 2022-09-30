@@ -1,9 +1,14 @@
 # Natural-Language-Processing-with-Disaster-Tweets
 Kaggle Competition: Predict which Tweets are about real disasters and which ones are not
 
-## Final Rank
+## Final Rank and Result
 
-**32 / 824 -- Top 3%**  
+**32 / 824 -- Top 3%** 
+
+|Model|Best Accuracy|
+|:---|:---|
+|BERT|84.18%|
+|RoBERTa|84.18%|
 
 
 # Set-up
