@@ -23,11 +23,11 @@ def data_preprocess():
     null_text = data_train['text'].isnull().sum()
     null_label = data_train['target'].isnull().sum()
 
-    # print(Fore.GREEN + f"{'Null value in training data':^20} | {'Null value in training label':^20} | {'Training data shape:':^10}")
-    # print(Fore.GREEN + "-"*100) 
-    # print(Fore.GREEN + f"{null_text:^27} | {null_label:^28} | {data_train.shape}")
-    # print(Fore.GREEN + "-"*100)
-    # print("\n")
+    print(Fore.GREEN + f"{'Null value in training data':^20} | {'Null value in training label':^20} | {'Training data shape:':^10}")
+    print(Fore.GREEN + "-"*100) 
+    print(Fore.GREEN + f"{null_text:^27} | {null_label:^28} | {data_train.shape}")
+    print(Fore.GREEN + "-"*100)
+    print("\n")
     
     tweets_idx = {}
     for i in data_train.index:
@@ -75,20 +75,20 @@ def data_preprocess():
     data_test['text'] = data_test['text'].apply(lambda x:preprocess_sentence(x))
 
     data_train, duplicate_tweets = remove_duplicates(data_train, tweets_idx)
-    # print(Fore.RED + f"Duplicate tweets: {duplicate_tweets}")
-    # print(Fore.GREEN + "-"*100)
+    print(Fore.RED + f"Duplicate tweets: {duplicate_tweets}")
+    print(Fore.GREEN + "-"*100)
 
     data_train, inconsistent_tweets = remove_inconsistent_labels(data_train, inconsistent_labels)
-    # print(Fore.RED + f"Duplicate tweets: {inconsistent_tweets}")
-    # print(Fore.GREEN + "-"*100)
+    print(Fore.RED + f"Duplicate tweets: {inconsistent_tweets}")
+    print(Fore.GREEN + "-"*100)
     
     x_data, y_data = data_train['text'], data_train.target.values
 
-    # print(Fore.BLUE + "Original sentence: " + data_train['text'][22])
-    # print(Fore.BLUE + "-"*100)
-    # print(Fore.BLUE + "Processed sentence: " + x_data[22])
-    # print(Fore.BLUE + "-"*100)
-    # print("\n")
+    print(Fore.BLUE + "Original sentence: " + data_train['text'][22])
+    print(Fore.BLUE + "-"*100)
+    print(Fore.BLUE + "Processed sentence: " + x_data[22])
+    print(Fore.BLUE + "-"*100)
+    print("\n")
 
     return x_data, y_data, data_test
 
