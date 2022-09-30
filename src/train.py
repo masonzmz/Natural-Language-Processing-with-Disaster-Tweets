@@ -177,9 +177,9 @@ def train(model, train_dataloader, loss_fn, optimizer, scheduler, device, index,
         if evaluation == True:
             val_loss, val_accuracy, f1 = evaluate(model, val_dataloader, loss_fn, device)
             time_elapsed = time.time() - t0_epoch
-            # if epoch_i + 1 == 3:
-                # print(Fore.RED + f"{index + 1:^7} | {avg_train_loss:^12.6f} | {val_loss:^10.6f} | {val_accuracy:^9.2f} | {f1:^9.2f} | {time_elapsed:^9.2f}")
-                # print(Fore.BLUE + "-"*70)
+            if epoch_i + 1 == 3:
+                print(Fore.RED + f"{index + 1:^7} | {avg_train_loss:^12.6f} | {val_loss:^10.6f} | {val_accuracy:^9.2f} | {f1:^9.2f} | {time_elapsed:^9.2f}")
+                print(Fore.BLUE + "-"*70)
             
     if evaluation == True:       
         return val_accuracy
@@ -384,8 +384,8 @@ def main():
     classifier, optimizer, scheduler = initialize_model(learning_rate, epsilon, device, args.model_name, num_train_steps)
     loss_fn = nn.BCEWithLogitsLoss()
 
-    # print(Fore.RED + f"{'k-fold':^7} | {'Train Loss':^12} | {'Val Loss':^10} | {'Val Acc':^9} | {'F1 Score':^9} | {'Time':^9}")
-    # print(Fore.RED + "-"*70)
+    print(Fore.RED + f"{'k-fold':^7} | {'Train Loss':^12} | {'Val Loss':^10} | {'Val Acc':^9} | {'F1 Score':^9} | {'Time':^9}")
+    print(Fore.RED + "-"*70)
 
     folds_accuracy = []
 
@@ -420,8 +420,8 @@ def main():
         folds_accuracy.append(fold_i_acc)
     
     folds_accuracy = np.array(folds_accuracy)
-    # print("%0.2f accuracy with a standard deviation of %0.2f" % (folds_accuracy.mean(), folds_accuracy.std()))
-    # print(Fore.RED + "-"*70)
+    print("%0.2f accuracy with a standard deviation of %0.2f" % (folds_accuracy.mean(), folds_accuracy.std()))
+    print(Fore.RED + "-"*70)
 
     # Concatenate the training data and the validation data
     full_train_data = torch.utils.data.ConcatDataset([train_data, val_data])
@@ -461,13 +461,9 @@ def main():
     submission = pd.read_csv('./data/sample_submission.csv')
     submission['target'] = list(map(int, predictions))
 
-    original_predictions = pd.read_csv("./data/perfect_submission.csv")
-    final_accuracy = metrics.accuracy_score(submission.target.values, original_predictions.target.values)
-    print(Fore.RED + f"Final accuracy is: {final_accuracy}")
-
     savename = f'./results/result_{args.model_name}_{args.threshold}_{args.batchsize}_{args.dropout}_{args.layer}.mat'
     scio.savemat(savename,
-                {'accuracy':final_accuracy,
+                {'accuracy':folds_accuracy,
                 'model_name':args.model_name,
                 'threshold': args.threshold,
                 'batchsize': args.batchsize,
