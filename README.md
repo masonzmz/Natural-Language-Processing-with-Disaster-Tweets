@@ -3,7 +3,7 @@ Kaggle Competition: Predict which Tweets are about real disasters and which ones
 
 ## Final Rank and Result
 
-[Leadboard](https://www.kaggle.com/competitions/nlp-getting-started/leaderboard)
+[Leadboard is](https://www.kaggle.com/competitions/nlp-getting-started/leaderboard)
 
 |Model|Best Accuracy|Rank|
 |:---|:---|:---|
