@@ -37,10 +37,10 @@ username@localhost:~$ pip install nltk
 
 # How to run
 
+## Tuning Parameters
+
 The first choice is tuning parameters, you can directly run the run.sh file. It will take a long time, about 100hrs. 
 The best parameters for different model are provided below. 
-
-## Tuning Parameters
 
 ```console
 username@localhost:~$ bash /src/run.sh
