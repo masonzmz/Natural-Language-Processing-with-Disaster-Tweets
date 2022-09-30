@@ -3,7 +3,7 @@ Kaggle Competition: Predict which Tweets are about real disasters and which ones
 
 ## Final Rank
 ```
-**32 / 824**  **Top 3%**
+**32 / 824 -- Top 3%**  
 ```
 
 # Set-up
