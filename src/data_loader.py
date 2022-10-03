@@ -1,9 +1,9 @@
 '''
-Author       : error: git config user.name && git config user.email & please set dead value or install git
+Author       : Mingzhe Zhang (s4566656)
 Date         : 2022-08-28 19:56:07
-LastEditors  : error: git config user.name && git config user.email & please set dead value or install git
+LastEditors  : Mingzhe Zhang (s4566656)
 LastEditTime : 2022-09-29 17:24:42
-FilePath     : /s4566656/anaconda3/envs/mason/Kaggle_Disaster/src/data_loader.py
+FilePath     : ./src/data_loader.py
 '''
 
 import pandas as pd
