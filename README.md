@@ -8,7 +8,7 @@ Kaggle Competition: Predict which Tweets are about real disasters and which ones
 |Model|Best Accuracy|Rank|
 |:---|:---|:---|
 |BERT|84.18%|32/824 Top 3%|
-|RoBERTa|83.97%|43/824 Top 5%|
+|RoBERTa|83.97%|53/860 Top 6%|
 
 # Set-up
 ## Operation System:
