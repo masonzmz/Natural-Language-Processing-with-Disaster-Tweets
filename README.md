@@ -55,7 +55,7 @@ username@localhost:~$ python3 /src/train.py --model_name [$model_name] --thresho
 ```
 
 ## Reproduce
-
+Run the following command， which can achieve the best result of BERT model.
 ```
 python src/train.py \
 	--model_name bert_base \
@@ -63,6 +63,16 @@ python src/train.py \
 	--batchsize 8 \
 	--dropout 0.3 \
 	--layer 3
+```
+
+Run the following command， which can achieve the best result of RoBERTa model.
+```
+python src/train.py \
+	--model_name roberta_base \
+	--threshold 0.6 \
+	--batchsize 16 \
+	--dropout 0.3 \
+	--layer 1
 ```
 
 
