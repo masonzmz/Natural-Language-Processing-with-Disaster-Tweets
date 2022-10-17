@@ -54,4 +54,17 @@ Meanwhile, you can just run the python file, it will be executed once, and the r
 username@localhost:~$ python3 /src/train.py --model_name [$model_name] --threshold [$threshold] --batchsize [$batchsize] --dropout [$dropout] --layer[$layer] 
 ```
 
+## Reproduce
+
+```
+python src/train.py \
+	--model_name bert_base \
+	--threshold 0.6 \
+	--batchsize 8 \
+	--dropout 0.3 \
+	--layer 3
+```
+
+
+
 
