@@ -74,7 +74,7 @@ python src/train.py \
 	--dropout 0.3 \
 	--layer 1
 ```
-
+Note: The results of each run may deviate slightly
 
 
 
