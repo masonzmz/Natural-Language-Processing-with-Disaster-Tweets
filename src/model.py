@@ -2,7 +2,7 @@
 Author       : Mingzhe Zhang (s4566656)
 Date         : 2022-08-28 20:22:12
 LastEditTime : 2022-09-29 11:27:05
-FilePath     : ./src/premodel.py
+FilePath     : ./src/model.py
 '''
 
 import torch.nn as nn
