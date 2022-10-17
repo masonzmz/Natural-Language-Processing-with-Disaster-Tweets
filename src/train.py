@@ -28,7 +28,7 @@ from transformers import (AdamW, AutoTokenizer, RobertaTokenizer,
 
 from data_loader import data_preprocess
 from plot import evaluate_roc
-from premodel import BertClassifier, RobertaClassifier
+from model import BertClassifier, RobertaClassifier
 
 warnings.filterwarnings('ignore')
 
